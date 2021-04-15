@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+    nav{
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+
+    nav a{
+        color: rgba(255, 255, 255, 0.726);
+        text-decoration: none;
+     
+        
+    }
+
+    .icono{
+        display: block;
+        animation: moverizquierda 4s ease-in;
+        z-index: 100;
+        
+    }
+
+    h2{
+        color:#fff
+    }
+
+    h1{
+        color:#fff
+    }
+    
+    
+    header{
+        background: #000000;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #000000, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #000000, #2e2e2e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        height: auto;
+        padding: 149.5px;
+        width: 100%
+
+        
+    }
+    
+        .container{
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            align-items: center;
+            margin: auto;
+        }
+
+        img{
+            display: block;
+            align-items: baseline;
+            object-fit: cover;
+            width: auto;
+            animation: arriba 2s ease-in;
+        }
+
+        .textos{
+            width: 53%;
+            color: #fff
+        }
+    
+        .textos h1{
+            font-size: 50px;
+            animation: moverderecha 2s ease-in;
+        }
+
+        .textos h2{
+            font-size: 16px;
+            animation: moverizquierda 2s ease-in;
+        }
+        .textos a{
+            
+            color: #fff;
+            font-weight: 300;
+            text-decoration: none;
+            margin-top: 10px;
+            border: 1px solid #fff;
+            width: 100px;
+            border-radius: 5px;
+            text-align: center;
+            padding: 5px;
+            animation: arriba 3s ease-in;
+        }
+    
+        .calive{
+            height: 100px;
+            width: 100%;
+
+             background: #000000;  /* fallback for old browsers */
+             background: -webkit-linear-gradient(to right, #000000, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+             background: linear-gradient(to right, #000000, #2e2d2d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            
+        }
+
+        .enlaces{
+            position: fixed;
+            display: flex;
+            top: 0;
+            background: #000000;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            right: 0;
+            flex-direction: column;
+            width: 100%;
+            transition: all 1s ease;
+            background: #000000;  /* fallback for old browsers */
+             background: -webkit-linear-gradient(to right, #000000d0, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+             background: linear-gradient(to right, #1f1e1e, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+
+        .uno{
+            -webkit-clip-parh: circle(0% at 0% 0%);
+            clip-path: circle(0% at 0% 0%);
+
+        }
+
+        .dos{
+            -webkit-clip-parh: circle(150% at 0% 0%);
+            clip-path: circle(150% at 0% 0%);
+
+        }
+        
+        @keyframes moverizquierda{
+            0%{
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+
+            100%{
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
+        @keyframes moverderecha{
+            0%{
+                opacity: 0;
+                transform: translateX(100px);
+            }
+
+            100%{
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
+        @keyframes arriba{
+            0%{
+                opacity: 0;
+                transform: translateY(100px);
+            }
+
+            100%{
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
+
+        @media screen and (max-width:1000px){
+            img{
+                height: 400;
+            }
+        }
