@@ -51,14 +51,16 @@ body{
     width: 800px;
     height: 800px;
     transform: translate(-140%, -50%);
-    background: #00000096;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #000000ad, #181818b0);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #000000, #181818e0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000000e7, #181818d5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000000, #181818da); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 50%;
     transition: .8s;
 }
 
-
+.video:hover:after{
+    transform: translate(-50%, -50%);
+}
 
 
 video{
