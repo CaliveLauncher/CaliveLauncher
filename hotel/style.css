@@ -58,30 +58,6 @@ body{
     transition: .8s;
 }
 
-.video:hover:after{
-    transform: translate(-50%, -50%);
-}
-
-
-video{
-    position: absolute;
-    height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: .8s;
-}
-
-i{
-    position: absolute;
-    z-index: 4;
-    top:   50%;
-    left: 50%;
-    transform: translate(-2000px, -50%);
-    transition: .5s;
-    transition-timing-function: ease-in;
-}
-
 .video:hover i{
     transform: translate(-50%, -50%);
     transition-timing-function: ease;
